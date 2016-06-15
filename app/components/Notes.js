@@ -1,5 +1,5 @@
 import React from 'react';
-import Note from './Note.jsx';
+import Note from './Note.js';
 
 export default ({notes, onEdit, onDelete}) => {
   return (

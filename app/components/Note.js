@@ -1,6 +1,7 @@
 import React from 'react';
 
 export default class Note extends React.Component {
+
   constructor(props) {
     super(props);
 
@@ -11,7 +12,6 @@ export default class Note extends React.Component {
   }
 
   renderEdit = () => {
-    console.log("renderEdit");
     return <input type="text"
       ref={
         (e) => e ? e.selectionState = this.props.task.length : null
@@ -23,7 +23,6 @@ export default class Note extends React.Component {
   }
 
   renderNote = () => {
-    console.log("renderNote");
     const onDelete = this.props.onDelete;
     // if the user clicks a normal note, trigger editing logic
     return (
@@ -39,7 +38,6 @@ export default class Note extends React.Component {
   };
 
   edit = () => {
-    console.log("edit");
     //Enter edit mode
     this.setState({
       editing: true
@@ -47,7 +45,6 @@ export default class Note extends React.Component {
   };
 
   checkEnter = (e) => {
-    console.log("checkEnter");
     // The user hit enter -> finish up
     if(e.key === 'Enter') {
       this.finishEdit(e);
@@ -55,7 +52,6 @@ export default class Note extends React.Component {
   };
 
   finishEdit = (e) => {
-    console.log("finishEdit");
 
     const value = e.target.value;
 

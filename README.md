@@ -5,3 +5,4 @@ Boilerplate for React-Redux apps with the following features:
 * React-Redux
 * Webpack & Hot Loading
 * Babel
+* React Bootstrap for quick prototyping

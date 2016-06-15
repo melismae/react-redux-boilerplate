@@ -1,3 +1,8 @@
-Creating a Kanban App via SurviveJS tutorial
+# React-Redux Boilerplace
 
-This project is a starting point for creating an app using React and Webpack. It's created using the tutorial provided in SurviveJS's Webpack and React book.
+Boilerplate for React-Redux apps with the following features:
+* React
+* React-Redux
+* Webpack & Hot Loading
+* Babel
+* 
